@@ -3,6 +3,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 .hero .col img {
   width: 500px;
 }
