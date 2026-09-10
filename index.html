@@ -18,11 +18,20 @@
     />
     <!-- my css -->
     <link rel="stylesheet" href="./assets/image/style.css" />
+    <!-- cdn fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4 sticky-top" >
+      class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4 sticky-top shadow "
+    >
       <div class="container">
         <a class="navbar-brand d-flex gap-2 align-items-center" href="#">
           <img
@@ -53,13 +62,13 @@
               <a class="nav-link text-primary" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Service</a>
+              <a class="nav-link text-primary" href="#Service">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Recent</a>
+              <a class="nav-link text-primary" href="#Recent">Recent</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">FAQ</a>
+              <a class="nav-link text-primary" href="#FAQ">FAQ</a>
             </li>
           </ul>
         </div>
@@ -68,9 +77,15 @@
     <!-- hero section -->
     <section id="hero">
       <div class="container">
-        <div class="hero row align-items-center  gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start">
+        <div
+          class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start"
+        >
           <div class="col">
-            <h1 class="fw-bold">Selamat datang<br> di<span class="text-primary"> Website IDN E-Report 2026</span>  Forum Pengajuan</h1>
+            <h1 class="fw-bold">
+              Selamat datang<br />
+              di<span class="text-primary"> Website IDN E-Report 2026</span>
+              Forum Pengajuan
+            </h1>
             <p class="lh-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               libero architecto dolor rem recusandae debitis esse illum porro,
@@ -81,26 +96,139 @@
               <a class="btn btn-outline-primary" href="">let's Start</a>
             </div>
           </div>
-          <div class="col d-flex justify-content-center justify-content-lg-end ">
+          <div class="col d-flex justify-content-center justify-content-lg-end">
             <img src="assets/image/undraw_data-reports_l2u3.png" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- about section -->
-     <section id="about">
+    <section id="about">
       <div class="container">
         <div class="about row">
           <div class="col text-center">
             <h1 class="text-primary fw-bold mb-4">Tentang kami</h1>
-            <p class="lh-lg mb-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui maiores corrupti aliquam corporis impedit dignissimos esse harum dolorem cupiditate praesentium unde quas, reprehenderit ratione.</p>
-            <div class="col d-flex justify-content-center justify-content-lg-end">
-              <img src="assets/image/undraw_profile_9xdn.png" alt="">
+            <p class="lh-lg mb-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              qui maiores corrupti aliquam corporis impedit dignissimos esse
+              harum dolorem cupiditate praesentium unde quas, reprehenderit
+              ratione.
+            </p>
+            <div
+              class="col d-flex justify-content-center justify-content-lg-end"
+            >
+              <img src="assets/image/undraw_profile_9xdn.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-     </section>
+    </section>
+
+    <!-- service section -->
+    <section id="Service">
+      <div class="container">
+        <div>
+          <h1 class="fw-bold">Layanan Kami</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            harum ab nostrum odit atque possimus voluptate repellat minima,
+            iure, enim error earum, doloribus incidunt esse.
+          </p>
+        </div>
+        <div class="service row p-4 pt-lg-0 gap-3">
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h4 class="fw-semibold">Pengaduan Akademik</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+              unde commodi mollitia, excepturi perspiciatis itaque!
+            </p>
+          </div>
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+          >
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <h4 class="fw-semibold">Pengaduan Fasilitas</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+              unde commodi mollitia, excepturi perspiciatis itaque!
+            </p>
+          </div>
+          <div
+            class="col bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis"
+            >
+            <i class="fa-solid fa-user-secret"></i>
+
+            <h4 class="fw-semibold">Pengaduan Anonymous</h4>
+            <p class="lh-lg mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+              unde commodi mollitia, excepturi perspiciatis itaque!
+            </p>
+          </div>
+          <!-- recent section -->
+          <section id="recent">
+            <div class="container">
+              <div class="text-end mb-5">
+                <h1 class="fw-bold text-primary">Laporan Terbaru</h1>
+                <p class="lh-lg">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Incidunt atque nesciunt ab! Unde nulla, tenetur, sunt mollitia
+                  magnam optio reiciendis maiores quasi, atque vel officia!
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card" >
+                    <p style="background-color:rgba(0, 0, 0, 0.45) ;" class="position-absolute  text-white px-3 py-2 rounded-3">Akademik</p>
+                    <img style="height: 250px; ;" src="./assets/image/kelas kotor.png" class="card-img-top" alt="Gambar kelas kotor" />
+                    <div class="card-body">
+                      <h5 class="card-title">Laporan kelas kotor</h5>
+                      <p class="mb-4">
+                        By:<a class="text-decoration-none" href="">Nadhif</a> 2 Day Ago  Some quick example text to build on the card title and
+                        make up the bulk of the card’s content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card" >
+                    <p style="background-color:rgba(0, 0, 0, 0.45) ;" class="position-absolute  text-white px-3 py-2 rounded-3">Akademik</p>
+                    <img style="height: 250px;" src="./assets/image/kelas kotor.png" class="card-img-top" alt="Gambar kelas kotor" />
+                    <div class="card-body">
+                      <h5 class="card-title">Laporan Fasilitas kelas </h5>
+                      <p class="mb-4">
+                        By:<a class="text-decoration-none" href="">Nadhif</a> 2 Day Ago  Some quick example text to build on the card title and
+                        make up the bulk of the card’s content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div class="card" >
+                    <p style="background-color:rgba(0, 0, 0, 0.45) ;" class="position-absolute  text-white px-3 py-2 rounded-3">Akademik</p>
+                    <img style="height: 250px;object-fit: cover;" src="./assets/image/curi.png" class="card-img-top" alt="Gambar kelas kotor" />
+                    <div class="card-body">
+                      <h5 class="card-title">anonymous</h5>
+                      <p class="mb-4">
+                        By:<a class="text-decoration-none" href="">Nadhif</a> 2 Day Ago  Some quick example text to build on the card title and
+                        make up the bulk of the card’s content.
+                      </p>
+                      <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
 
     <!-- cdn js -->
     <script
