@@ -3,11 +3,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+
 .hero .col img {
   width: 500px;
 }
@@ -18,7 +14,25 @@ section {
 .about .col img {
   width: 100%;
 }
-@media screen and (max-width: 500px) {
+footer{
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+footer-link{
+  opacity: 75%;
+  color: whitesmoke;
+  text-decoration: none;
+
+}
+footer-link:hover{
+color: white;
+opacity: 100%;
+text-decoration: none;
+}
+.copyright{
+  margin-top: 100px;
+}
+@media screen and (max-width: 510px) {
   .hero .col img {
     width: 100%;
   }
