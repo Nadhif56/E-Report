@@ -30,12 +30,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-       <!-- Navbar -->
+    <!-- Navbar -->
     <nav
       class="site-navbar animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary py-4 sticky-top shadow"
     >
       <div class="container">
-        <a class="navbar-brand d-flex gap-2 align-items-center" href="index.html">
+        <a
+          class="navbar-brand d-flex gap-2 align-items-center"
+          href="index.html"
+        >
           <img
             src="./assets/image/OIP.jpg"
             alt="Logo E-Report"
@@ -61,13 +64,19 @@
               <a class="nav-link text-white" href="index.html#hero">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.html#about">Tentang Kami</a>
+              <a class="nav-link text-white" href="index.html#about"
+                >Tentang Kami</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.html#Service">Layanan</a>
+              <a class="nav-link text-white" href="index.html#Service"
+                >Layanan</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.html#Recent">Laporan Terbaru</a>
+              <a class="nav-link text-white" href="index.html#Recent"
+                >Laporan Terbaru</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="index.html#FAQ">FAQ</a>
@@ -99,33 +108,39 @@
           </p>
         </div>
         <!-- Filter & Search -->
-          <div class="row mt-5">
-            <div class="col-md-4 py-4">
-              <input class="form-control" type="text" placeholder="Cari pengaduan..." aria-label="Input pencarian">
-            </div>
-            <div class="col-md-3 py-4">
-              <select class="form-select" aria-label="Filter Kategori">
-                <option selected disabled>Kategori</option>
-                <option value="1">Akademik</option>
-                <option value="2">Fasilitas</option>
-                <option value="3">Anonymous</option>
-              </select>
-            </div>
-            <div class="col-md-3 py-4">
-              <select class="form-select" aria-label="Urutan Pengaduan">
-                <option selected disabled>Urutan</option>
-                <option value="1">Terbaru</option>
-                <option value="2">Terlama</option>
-                <option value="3">Paling Banyak Dilihat</option>
-              </select>
-            </div> <!-- </select> sudah ditambahkan di baris atas -->
-            <div class="col-md-2 py-4">
-              <button class="btn btn-primary w-100 shadow-sm">
-                <i class="fa-solid fa-filter"></i> Filter
-              </button>
-            </div>
+        <div class="row mt-5">
+          <div class="col-md-4 py-4">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Cari pengaduan..."
+              aria-label="Input pencarian"
+            />
           </div>
-         <!-- Card 1: Sampah -->
+          <div class="col-md-3 py-4">
+            <select class="form-select" aria-label="Filter Kategori">
+              <option selected disabled>Kategori</option>
+              <option value="1">Akademik</option>
+              <option value="2">Fasilitas</option>
+              <option value="3">Anonymous</option>
+            </select>
+          </div>
+          <div class="col-md-3 py-4">
+            <select class="form-select" aria-label="Urutan Pengaduan ">
+              <option  selected disabled>Urutan</option>
+              <option  voptionalue="1">Terbaru</option>
+              <option value="2">Terlama</option>
+              <option value="3">Paling Banyak Dilihat</option>
+            </select>
+          </div>
+          <!-- </select> sudah ditambahkan di baris atas -->
+          <div class="col-md-2 py-4">
+            <button class="btn btn-primary w-100 shadow-sm">
+              <i class="fa-solid fa-filter"></i> Filter
+            </button>
+          </div>
+        </div>
+        <!-- Card 1: Sampah -->
         <div class="row">
           <div
             data-aos="fade-right"
@@ -434,64 +449,118 @@
             </div>
           </div>
           <!-- pagination -->
-           <nav aria-label="Page navigation example ">
-              <ul class="pagination justify-content-center ">
-                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-              </ul>
-            </nav>
-           <!-- Back -->
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Previous</a
+                >
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+          <!-- Back -->
           <div class="col-12 text-center mt-3">
             <a
               data-aos="fade-right"
               data-aos-duration="1000"
               class="btn btn-outline-primary"
-              href="./index.html#Recent">
+              href="./index.html#Recent"
+            >
               Kembali <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- footer -->
-       <footer class="bg-primary py-5">
-        <div class="container">
-          <div class="row justify-content-between row-gap-5 row-gap-md-0">
-            <div class="col-md-4 text-white">
-              <div class="d-flex align-items-center gap-2 mb-2">
-              <img src="assets/image/OIP.jpg" width="30" alt="" class="rounded">
+    <footer class="bg-primary py-5">
+      <div class="container">
+        <div class="row justify-content-between row-gap-5 row-gap-md-0">
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img
+                src="assets/image/OIP.jpg"
+                width="30"
+                alt=""
+                class="rounded"
+              />
               <h3 class="mb-0 fw-bold">E-Report</h3>
             </div>
-            <p class="opacity-75 lh-lg mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eum harum dolor ullam. Voluptatum doloremque aspernatur velit quo ab asperiores culpa molestiae ad vero aut!</p>
-
-            </div>
-            <div class="col-md-2 d-flex flex-column gap-2 text-white ">
-              <h4 class="fw-bold">Menu</h4>
-              <a class="text-white text-decoration-none footer-link" href="index.html#hero">Home</a>
-              <a class="text-white text-decoration-none footer-link" href="index.html#about">About</a>
-              <a class="text-white text-decoration-none footer-link" href="index.html#Service">Service</a>
-              <a class="text-white text-decoration-none footer-link" href="#Recent">Report</a>
-              <a class="text-white text-decoration-none footer-link" href="index.html#FAQ">FAQ</a>
-            </div>
-            <div class="col-md-4 d-flex flex-column gap-3">
-              <h3 class="fw-bold text-white">Contact US</h3>
-              <a target="_blank" class="text-white text-decoration-none footer-link d-flex align-items-center gap-3" href="mailto:nadhifhasan100@gmail.com"><i class="fa-solid fa-envelope"></i>nadhifhasan100@gmail.com</a>
-              <a target="_blank" class="text-white text-decoration-none footer-link d-flex align-items-center gap-3" href="https://wa.me/6281389759263"><i class="fa-brands fa-whatsapp"></i>+62 813-8975-9263</a>
-              <a target="_blank" class="text-white text-decoration-none footer-link d-flex align-items-center gap-3" href="https://maps.app.goo.gl/7MMNMb1NNv7kGeY37"><i class="fa-solid fa-map-location-dot"></i>Jl. Permata Cikarang Selatan , Sukadami, Cikarang Sel., Kabupaten Bekasi.</a>
+            <p class="opacity-75 lh-lg mb-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+              eum harum dolor ullam. Voluptatum doloremque aspernatur velit quo
+              ab asperiores culpa molestiae ad vero aut!
+            </p>
+          </div>
+          <div class="col-md-2 d-flex flex-column gap-2 text-white">
+            <h4 class="fw-bold">Menu</h4>
+            <a
+              class="text-white text-decoration-none footer-link"
+              href="index.html#hero"
+              >Home</a
+            >
+            <a
+              class="text-white text-decoration-none footer-link"
+              href="index.html#about"
+              >About</a
+            >
+            <a
+              class="text-white text-decoration-none footer-link"
+              href="index.html#Service"
+              >Service</a
+            >
+            <a
+              class="text-white text-decoration-none footer-link"
+              href="#Recent"
+              >Report</a
+            >
+            <a
+              class="text-white text-decoration-none footer-link"
+              href="index.html#FAQ"
+              >FAQ</a
+            >
+          </div>
+          <div class="col-md-4 d-flex flex-column gap-3">
+            <h3 class="fw-bold text-white">Contact US</h3>
+            <a
+              target="_blank"
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-3"
+              href="mailto:nadhifhasan100@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>nadhifhasan100@gmail.com</a
+            >
+            <a
+              target="_blank"
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-3"
+              href="https://wa.me/6281389759263"
+              ><i class="fa-brands fa-whatsapp"></i>+62 813-8975-9263</a
+            >
+            <a
+              target="_blank"
+              class="text-white text-decoration-none footer-link d-flex align-items-center gap-3"
+              href="https://maps.app.goo.gl/7MMNMb1NNv7kGeY37"
+              ><i class="fa-solid fa-map-location-dot"></i>Jl. Permata Cikarang
+              Selatan , Sukadami, Cikarang Sel., Kabupaten Bekasi.</a
+            >
           </div>
           <div class="copyright text-white text-center">
-            <p>&copy; Copyright By <span class="fw-bold">X RPL C Class</span> 2026, All Right Reserved.</p>
+            <p>
+              &copy; Copyright By
+              <span class="fw-bold">X RPL C Class</span> 2026, All Right
+              Reserved.
+            </p>
           </div>
         </div>
-        </div>
-       </footer>
+      </div>
+    </footer>
 
-  <!-- cdn js -->
+    <!-- cdn js -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -502,13 +571,11 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
-    
-     <!-- js aos -->
+
+    <!-- js aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-  AOS.init();
+      AOS.init();
     </script>
-
-   
   </body>
-  </html>
+</html>
