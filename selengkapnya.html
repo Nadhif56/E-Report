@@ -86,40 +86,40 @@
     <!-- Selengkapnya -->
     <div class="container">
       <div class="row my-5">
-        <div class="col-lg-8">
-             <nav class="mt-3 mb-5 d-lg-none" aria-label="breadcrumb">
-            <ol class="breadcrumb ">
+        <div class="col-lg-8 bg-primary-subtle p-4 rounded-4 shadow">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb gap-2 shadow p-3 rounded mt-3 mb-5 d-lg-none d-md-none">
               <li class="btn btn-primary ">
-                <a class="text-white text-decoration-none breadcrumb-item" href="index.html#Hero">Home</a>
+                <a class="text-white text-decoration-none" href="index.html#Hero">Home</a>
               </li>
               <li class="btn btn-primary ">
-                <a class="text-white text-decoration-none breadcrumb-item" href="./More.html">Library</a>
+                <a class="text-white text-decoration-none" href="#">Library</a>
               </li>
               <li
-                class="btn btn-primary bg-primary text-white breadcrumb-item active"
+                class="btn btn-primary bg-primary text-white  active"
                 aria-current="page"
               >
-                Ruang Kelas A302 Sangat Kotor
+              Ruang Kelas A302 Sangat Kotor
               </li>
             </ol>
           </nav>
-          <h1 class="fw-bold text-primary-emphasis">
+          <h1 id="report-title" class="fw-bold text-primary-emphasis">
             Ruang Kelas A302 Sangat Kotor
           </h1>
           <p class="text-secondary">
-            By <a class="text-decoration-none fw-semibold" href="">Nadhif</a> |
-            2 Days ago
+            By <a id="report-author" class="text-decoration-none fw-semibold" href="">Nadhif</a> |
+            <span id="report-time">2 Days ago</span>
           </p>
 
-          <div style="height: 400px; overflow: hidden">
-            <img
+          <div style="height: 400px; overflow: hidden; border-radius: 1rem;">
+            <img id="report-image"
               src="./assets/image/kelas kotor.png"
-              class="w-100 rounded shadow-sm"
+              class="w-100 shadow-sm"
               alt=""
             />
           </div>
 
-          <p class="mt-4 lh-lg">
+          <p id="report-content-1" class="mt-4 lh-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
             optio eius, architecto tenetur nobis vel cumque, voluptatum at fuga
             repudiandae, dolores deleniti illum eum? Temporibus illum architecto
@@ -128,10 +128,10 @@
           <blockquote
             class="blockquote border-start border-primary border-3 p-3 fst-italic text-secondary"
           >
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem
-            corrupti adipisci consectetur dolor quaerat."
+            <span id="report-quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem
+            corrupti adipisci consectetur dolor quaerat."</span>
           </blockquote>
-          <p class="lh-lg">
+          <p id="report-content-2" class="lh-lg">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
             unde, nam tempora ipsa natus officiis vitae a accusamus quibusdam
             suscipit atque exercitationem debitis optio nulla earum itaque
@@ -146,15 +146,14 @@
                 class="form-control shadow-sm"
                 rows="4"
                 id="comment"
-                rows="3"
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Kirim</button>
           </form>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 p-4">
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb gap-2 shadow p-3 rounded">
+            <ol class="breadcrumb gap-3 shadow p-3 rounded">
               <li class="btn btn-primary ">
                 <a class="text-white text-decoration-none" href="index.html#Hero">Home</a>
               </li>
@@ -173,29 +172,26 @@
             <div class="card-header fw-bold text-white bg-primary">
               Recent Report
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <i class="fa-solid fa-chevron-right text-primary me-2"></i> Laporan air mati
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-chevron-right text-primary me-2"></i> Laporan air mati
-              </li>
-              <li class="list-group-item">
-                <i class="fa-solid fa-chevron-right text-primary me-2"></i> Laporan air mati
-              </li>
-            </ul>
+            <ul id="recent-reports" class="list-group list-group-flush"></ul>
           </div>
-          <div class="card mt-3">
+          <div class="card mt-3 shadow">
             <div class="card-header">Kategori</div>
             <div class="card-body">
-                <span class="badge text-bg-success">Success</span>
-                <span class="badge text-bg-danger">Danger</span>
+                <span id="report-category" class="badge text-bg-success">Fasilitas</span>
             </div>
+          </div>
+          <div class="col mt-4 text-center mt-3 ">
+            <a
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="btn btn-outline-primary shadow"
+              onclick="window.history.back()">
+              Kembali <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- sidebar -->
     <!-- footer -->
     <footer class="bg-primary py-5">
       <div class="container">
@@ -277,6 +273,8 @@
       </div>
     </footer>
 
+    <script src="./data.js"></script>
+
     <!-- cdn js -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -291,8 +289,6 @@
 
     <!-- js aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./report-detail.js"></script>
   </body>
 </html>
