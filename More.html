@@ -88,24 +88,72 @@
     <!-- Laporan -->
     <section id="Recent">
       <div class="container my-5">
-        <div class="text-center mb-5">
-          <h1
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            class="fw-bold text-primary"
-          >
-            Semua Laporan Terbaru
-          </h1>
-          <p
-            data-aos="fade-left"
-            data-aos-duration="1500"
-            data-aos-delay="400"
-            class="lh-lg text-muted"
-          >
-            Berikut adalah daftar pengajuan dan keluhan terbaru yang masuk ke
-            dalam sistem kami dan sedang dalam tahap penanganan oleh tim
-            terkait.
-          </p>
+        <div class="mb-5 d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between" >
+          <div class="col-lg-8 text-center text-lg-start">
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="fw-bold text-primary"
+            >
+              Semua Laporan Terbaru
+            </h1>
+            <p
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="400"
+              class="lh-lg text-muted"
+            >
+              Berikut adalah daftar pengajuan dan keluhan terbaru yang masuk ke
+              dalam sistem kami dan sedang dalam tahap penanganan oleh tim
+              terkait.
+            </p>
+          </div>
+          <div class="col-lg-2 ">
+            <button class="btn btn-primary shadow-sm w-100" data-bs-toggle="modal" data-bs-target="#Targetmodal"><i class="fa-solid fa-plus"></i> Tambah Laporan</button>
+            
+            <div class="modal fade" id="Targetmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-primary text-white">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel"><i class="fa-regular fa-pen-to-square"></i> Tambah Laporan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form action="">
+
+                    <div class="modal-body p-4">
+                      <div class="mb-4">
+                        <label for="" class="form-label fw-semibold">Judul Laporan:</label>
+                        <input class="form-control shadow-sm" type="text" placeholder="Judul Laporan . . . ">
+  
+                      </div>
+                      <div class="mb-4">
+                        <label for="" class="form-label fw-semibold">Pilih Kategori:</label>
+                          <select class="form-select shadow-sm" aria-label="Filter Kategori">
+                          <option selected disabled>Pilih Kategori:</option>
+                          <option value="Akademik">Akademik</option>
+                          <option value="Fasilitas">Fasilitas</option>
+                          <option value="Anonymous">Anonymous</option>
+                        </select>  
+                      </div>
+                      <div class="mb-4">
+                        <label class="form-label fw-semibold" for="">Isi Laporan:</label>
+                        <textarea class="form-control shadow-sm"  rows="2"></textarea>
+                      </div>
+                      <div class="mb-4">
+                        <label class="form-label fw-semibold" for="">Masukan Foto:</label>
+                        <input class="form-control shadow-sm" type="file" accept="image/*">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+                      <button type="submit" class="btn btn-primary" >Kirim</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
         <!-- Filter & Search -->
         <div class="row mt-5">
@@ -117,7 +165,7 @@
               aria-label="Input pencarian"
             />
           </div>
-          <div class="col-md-3 py-4">
+          <div class="col py-4">
             <select class="form-select" aria-label="Filter Kategori">
               <option selected disabled>Kategori</option>
               <option value="1">Akademik</option>
@@ -125,10 +173,10 @@
               <option value="3">Anonymous</option>
             </select>
           </div>
-          <div class="col-md-3 py-4">
+          <div class="col py-4">
             <select class="form-select" aria-label="Urutan Pengaduan">
-              <option  selected disabled>Urutan</option>
-              <option  voptionalue="1">Terbaru</option>
+              <option selected disabled>Urutan</option>
+              <option voptionalue="1">Terbaru</option>
               <option value="2">Terlama</option>
               <option value="3">Paling Banyak Dilihat</option>
             </select>
@@ -169,7 +217,9 @@
                     bau tidak sedap di area makan.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=4" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=4" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -204,7 +254,9 @@
                     kondisinya patah dan membahayakan saat digunakan.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=5" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=5" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -240,7 +292,9 @@
                     malam hari karena penerangan mati.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=6" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=6" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -273,7 +327,9 @@
                     menyala saat perkuliahan berlangsung.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=7" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=7" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -307,7 +363,9 @@
                     perpustakaan sering terputus dan sangat lambat.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=8" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=8" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -341,7 +399,9 @@
                     B rusak dan tidak bisa dikunci dari dalam.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=9" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=9" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -376,7 +436,9 @@
                     resmi sehingga menghalangi jalan pejalan kaki.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=10" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=10" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -410,7 +472,9 @@
                     lantai 3 mati sehingga area terasa gelap.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=11" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=11" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>
@@ -444,7 +508,9 @@
                     basement pada siang hari.
                   </p>
                 </div>
-                <a href="./selengkapnya.html?id=12" class="btn btn-primary">Selengkapnya...</a>
+                <a href="./selengkapnya.html?id=12" class="btn btn-primary"
+                  >Selengkapnya...</a
+                >
               </div>
             </div>
           </div>

@@ -152,6 +152,7 @@ const reportsData = [
       "Pelapor meminta petugas keamanan untuk menertibkan parkir liar tersebut dan menegakkan aturan parkir yang sudah ditentukan."
     ],
     quote: "Jalur pejalan kaki jadi sangat sempit karena dipenuhi motor yang parkir sembarangan."
+    
   },
   {
     id: 11,
