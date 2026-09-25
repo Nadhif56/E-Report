@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panduan Pengguna | E-Report</title>
+    
+    <link rel="shortcut icon" href="./assets/image/OIP.jpg" type="image/x-icon" />
+    
+    <!-- css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    
+    <!-- cdn fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+    <!-- cdn animated on scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <!-- Catatan: file style.css kustom sudah dihapus, semua tampilan sekarang murni Bootstrap 5 -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary py-4 sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex gap-2 align-items-center" href="index.html">
+          <img src="./assets/image/OIP.jpg" alt="Logo E-Report" width="30" class="d-inline-block align-text-top rounded" />
+          <span class="text-white fw-bold">E-Report</span>
+        </a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#hero">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#Service">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#Recent">Laporan Terbaru</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html#FAQ">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="./guide.html">Guide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header halaman -->
+    <section id="GuideHero" class="bg-primary-subtle py-5">
+      <div class="container">
+        <div class="row align-items-center g-5 text-center text-lg-start">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <h1 class="fw-bold text-primary">Panduan Pengguna E-Report</h1>
+            <p class="lh-lg text-secondary-emphasis mb-4">
+              Portal E-Report IDN 2026 adalah situs resmi bagi masyarakat untuk melaporkan masalah atau memberikan saran langsung ke pemerintah secara terbuka.
+Cara melaporkannya sangat mudah:
+<li class="lh-lg">Pilih kategori laporan yang sesuai.</li>
+<li class="lh-lg">Lampirkan bukti yang jelas.</li>
+<li class="lh-lg">Pantau perkembangan laporan menggunakan nomor tiket khusus.</li>
+            </p>
+
+            <div class="mt-4 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+              <a class="btn btn-primary" href="#Langkah">Cara Melapor</a>
+              <a class="btn btn-primary" href="#Kategori">Kategori Laporan</a>
+              <a class="btn btn-primary" href="#Lacak">Melacak Laporan</a>
+              <a class="btn btn-primary" href="#Tips">Tips Menulis</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+            <img class="img-fluid animate__animated animate__fadeIn animate__delay-1s rounded-5 " src="./assets/image/undraw_data-reports_l2u3.png" alt="Ilustrasi laporan digital" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Langkah membuat laporan -->
+    <section id="Langkah" class="py-5">
+      <div class="container">
+        <div class="mb-5">
+          <h1 data-aos="fade-right" data-aos-duration="1000" class="fw-bold">4 Langkah Membuat Laporan</h1>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            Proses pengaduan di E-Report dirancang sesingkat mungkin, dari
+            membuka formulir sampai laporan Anda tercatat dalam sistem.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+            <div class="card border-primary-subtle shadow-sm h-100">
+              <div class="card-body">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-3" style="width: 40px; height: 40px">
+                  1
+                </div>
+                <h5 class="fw-semibold card-title">Buka Formulir Laporan</h5>
+                <p class="card-text text-secondary mb-0">
+                  Dari halaman utama, klik <strong>"Let's Start"</strong> atau
+                  <strong>"Tambah Laporan"</strong> pada daftar Laporan Terbaru
+                  untuk membuka formulir pengaduan.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+            <div class="card border-primary-subtle shadow-sm h-100">
+              <div class="card-body">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-3" style="width: 40px; height: 40px">
+                  2
+                </div>
+                <h5 class="fw-semibold card-title">Pilih Kategori yang Sesuai</h5>
+                <p class="card-text text-secondary mb-0">
+                  Sesuaikan jenis keluhan Anda dengan kategori yang tersedia
+                  agar laporan diteruskan ke pihak yang tepat. Lihat penjelasan
+                  tiap kategori di bawah.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="card border-primary-subtle shadow-sm h-100">
+              <div class="card-body">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-3" style="width: 40px; height: 40px">
+                  3
+                </div>
+                <h5 class="fw-semibold card-title">Isi Detail &amp; Lampirkan Foto</h5>
+                <p class="card-text text-secondary mb-0">
+                  Tuliskan judul yang jelas dan kronologi kejadian. Lampirkan
+                  foto jika ada, karena bukti visual mempercepat proses verifikasi.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+            <div class="card border-primary-subtle shadow-sm h-100">
+              <div class="card-body">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold mb-3" style="width: 40px; height: 40px">
+                  4
+                </div>
+                <h5 class="fw-semibold card-title">Kirim &amp; Simpan Nomor Tiket</h5>
+                <p class="card-text text-secondary mb-0">
+                  Setelah menekan <strong>Kirim</strong>, sistem menerbitkan
+                  Nomor Tiket Laporan. Simpan nomor ini untuk melacak status
+                  laporan Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori laporan -->
+    <section id="Kategori" class="py-5 bg-light">
+      <div class="container">
+        <div class="mb-5">
+          <h1 data-aos="fade-right" data-aos-duration="1000" class="fw-bold">Mengenal Kategori Laporan</h1>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            Memilih kategori yang tepat membantu tim terkait menindaklanjuti
+            laporan Anda lebih cepat. Angka di bawah menunjukkan jumlah laporan
+            pada kategori tersebut yang sedang tercatat di sistem.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-graduation-cap fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Akademik</h5>
+              <p class="lh-lg mb-2">
+                Kendala perkuliahan, sistem nilai, atau pelayanan staf administrasi.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-screwdriver-wrench fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Fasilitas</h5>
+              <p class="lh-lg mb-2">
+                Kerusakan atau kekurangan fasilitas fisik: ruang kelas, perabot,
+                AC, proyektor, dan sejenisnya.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-broom fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Kebersihan</h5>
+              <p class="lh-lg mb-2">
+                Sampah, area kotor, toilet, atau saluran air yang perlu ditangani petugas kebersihan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-shield-halved fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Keamanan</h5>
+              <p class="lh-lg mb-2">
+                Kehilangan barang, area minim penerangan, atau hal lain yang berisiko terhadap keselamatan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-headset fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Layanan</h5>
+              <p class="lh-lg mb-2">
+                Kendala layanan digital seperti WiFi, e-learning, atau sistem pembayaran akademik.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="h-100 bg-primary-subtle p-4 rounded border border-primary text-primary-emphasis">
+              <i class="fa-solid fa-user-secret fa-lg"></i>
+              <h5 class="fw-semibold mt-2 mb-1">Anonymous</h5>
+              <p class="lh-lg mb-2">
+                Pelanggaran berat, perundungan, atau isu sensitif lain. Identitas pelapor dirahasiakan penuh.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Melacak laporan -->
+    <section id="Lacak" class="py-5">
+      <div class="container">
+        <div class="mb-5">
+          <h1 data-aos="fade-right" data-aos-duration="1000" class="fw-bold">Melacak Status Laporan</h1>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            Setiap laporan yang masuk akan melalui empat tahap berikut sebelum dinyatakan selesai.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800" class="row text-center g-3 mb-4">
+          <div class="col-6 col-md-3">
+            <div class="bg-primary rounded-circle mx-auto mb-2" style="width: 16px; height: 16px"></div>
+            <div class="fw-semibold">Diterima</div>
+            <div class="text-secondary small">Laporan masuk ke sistem</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-primary rounded-circle mx-auto mb-2" style="width: 16px; height: 16px"></div>
+            <div class="fw-semibold">Diverifikasi</div>
+            <div class="text-secondary small">Maks. 1x24 jam kerja</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-primary rounded-circle mx-auto mb-2" style="width: 16px; height: 16px"></div>
+            <div class="fw-semibold">Ditindaklanjuti</div>
+            <div class="text-secondary small">Estimasi 3-7 hari kerja</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-primary rounded-circle mx-auto mb-2" style="width: 16px; height: 16px"></div>
+            <div class="fw-semibold">Selesai</div>
+            <div class="text-secondary small">Laporan ditutup</div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="800" class="bg-primary-subtle rounded p-4 border border-primary">
+          <p class="mb-2">
+            <i class="fa-solid fa-circle-info text-primary me-2"></i>
+            Gunakan <strong>Nomor Tiket Laporan</strong> yang diberikan saat
+            pengiriman untuk memantau tahap di atas.
+          </p>
+          <p class="mb-0">
+            Jika status tidak berubah melebihi estimasi waktu, hubungi
+            <strong>Pusat Bantuan (Helpdesk)</strong> melalui kontak pada bagian
+            bawah halaman ini.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips menulis laporan -->
+    <section id="Tips" class="py-5 bg-light">
+      <div class="container">
+        <div class="mb-5">
+          <h1 data-aos="fade-right" data-aos-duration="1000" class="fw-bold">Tips Menulis Laporan yang Efektif</h1>
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            Laporan yang jelas lebih cepat ditindaklanjuti. Perhatikan beberapa
+            hal berikut sebelum menekan tombol kirim.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="800">
+            <div class="d-flex gap-3">
+              <i class="fa-solid fa-circle-check text-primary fa-lg mt-1"></i>
+              <div>
+                <h6 class="fw-semibold mb-1">Gunakan judul yang spesifik</h6>
+                <p class="text-secondary mb-0">
+                  "AC Ruang B302 Tidak Dingin" lebih jelas daripada "AC Rusak".
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <div class="d-flex gap-3">
+              <i class="fa-solid fa-circle-check text-primary fa-lg mt-1"></i>
+              <div>
+                <h6 class="fw-semibold mb-1">Sertakan lokasi &amp; waktu</h6>
+                <p class="text-secondary mb-0">
+                  Cantumkan gedung, ruangan, atau area, serta kapan kejadian berlangsung.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="d-flex gap-3">
+              <i class="fa-solid fa-circle-check text-primary fa-lg mt-1"></i>
+              <div>
+                <h6 class="fw-semibold mb-1">Lampirkan foto bila memungkinkan</h6>
+                <p class="text-secondary mb-0">
+                  Bukti visual membantu tim terkait memahami kondisi tanpa perlu survei ulang.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="d-flex gap-3">
+              <i class="fa-solid fa-circle-check text-primary fa-lg mt-1"></i>
+              <div>
+                <h6 class="fw-semibold mb-1">Pakai jalur Anonymous jika sensitif</h6>
+                <p class="text-secondary mb-0">
+                  Untuk isu seperti perundungan atau pelanggaran berat, identitas Anda akan tetap dirahasiakan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800" class="text-center mt-5">
+          <a href="./More.html" class="btn btn-primary btn-lg shadow-sm">
+            <i class="fa-solid fa-plus me-1"></i> Buat Laporan Sekarang
+          </a>
+          <a href="index.html#FAQ" class="btn btn-outline-primary btn-lg ms-2">
+            Lihat FAQ Lainnya
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-primary py-5">
+      <div class="container">
+        <div class="row justify-content-between row-gap-5 row-gap-md-0">
+          <div class="col-md-4 text-white">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <img src="assets/image/OIP.jpg" width="30" alt="" class="rounded" />
+              <h3 class="mb-0 fw-bold">E-Report</h3>
+            </div>
+            <p class="opacity-75 lh-lg mb-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+              eum harum dolor ullam. Voluptatum doloremque aspernatur velit quo
+              ab asperiores culpa molestiae ad vero aut!
+            </p>
+          </div>
+          <div class="col-md-2 d-flex flex-column gap-2 text-white">
+            <h4 class="fw-bold">Menu</h4>
+            <a class="text-white text-decoration-none link-opacity-75-hover" href="index.html#hero">Home</a>
+            <a class="text-white text-decoration-none link-opacity-75-hover" href="index.html#about">About</a>
+            <a class="text-white text-decoration-none link-opacity-75-hover" href="index.html#Service">Service</a>
+            <a class="text-white text-decoration-none link-opacity-75-hover" href="index.html#Recent">Report</a>
+            <a class="text-white text-decoration-none link-opacity-75-hover" href="index.html#FAQ">FAQ</a>
+          </div>
+          <div class="col-md-4 d-flex flex-column gap-3">
+            <h3 class="fw-bold text-white">Contact US</h3>
+            <a target="_blank" class="text-white text-decoration-none link-opacity-75-hover d-flex align-items-center gap-3" href="mailto:nadhifhasan100@gmail.com">
+              <i class="fa-solid fa-envelope"></i>nadhifhasan100@gmail.com
+            </a>
+            <a target="_blank" class="text-white text-decoration-none link-opacity-75-hover d-flex align-items-center gap-3" href="https://wa.me/6281389759263">
+              <i class="fa-brands fa-whatsapp"></i>+62 813-8975-9263
+            </a>
+            <a target="_blank" class="text-white text-decoration-none link-opacity-75-hover d-flex align-items-center gap-3" href="https://maps.app.goo.gl/7MMNMb1NNv7kGeY37">
+              <i class="fa-solid fa-map-location-dot"></i>Jl. Permata Cikarang Selatan , Sukadami, Cikarang Sel., Kabupaten Bekasi.
+            </a>
+          </div>
+        </div>
+        <hr class="border-light opacity-25 my-4" />
+        <div class="text-white text-center">
+          <p class="mb-0">
+            &copy; Copyright By <span class="fw-bold">X RPL C Class</span> 2026, All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- cdn js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
